@@ -26,7 +26,7 @@ import {
   FiTrendingUp,
 } from "react-icons/fi"
 import confetti from "canvas-confetti"
-import { Facebook, Instagram, Linkedin, MailIcon } from "lucide-react";
+import { Facebook, Instagram, Linkedin, MailIcon, NotepadText } from "lucide-react";
 
 function App() {
   const links = [
@@ -179,12 +179,12 @@ function App() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-10"
+          className="text-start mb-10 relative"
         >
           <div className="inline-block mb-4">
             <div className="relative">
               <div className=" inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 rounded-lg blur-xl opacity-50 animate-pulse"></div>
-              <h1 className="relative text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 py-2 px-4">
+              <h1 className="relative text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 py-2 ">
                 Resume ATS Analyzer
               </h1>
             </div>
@@ -195,6 +195,10 @@ function App() {
             </span>{" "}
             with AI-powered resume analysis
           </p>
+          <a className="absolute top-0 right-0 mt-4  px-2 py-2 text-violet-500 font-semibold  flex items-center" href="https://shield-ai-chatbot.vercel.app/">
+  <NotepadText className="mr-1" />
+  Help Guide
+</a>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -684,7 +688,7 @@ function App() {
                 <div className="relative w-64 h-64 mb-6">
                   <div className="absolute inset-0 bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300 rounded-full blur-xl opacity-30 animate-pulse"></div>
                   <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG2X7QL-4khaJlRfzVxKpE1xP5eQJLRIopCg&s"
+                    src="https://www.velvetech.com/wp-content/uploads/2022/07/data-analytics-role.jpg"
                     alt="Resume Analysis"
                     className="relative w-64 h-64 z-10"
                   />
