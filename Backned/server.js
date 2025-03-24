@@ -156,7 +156,7 @@ async function generateText(resumeText, jobDesc) {
         let responseText = await result.response.text();
 
         // Log the raw response for debugging
-        console.log("Raw AI response:", responseText);
+        // console.log("Raw AI response:", responseText);
 
         // Clean the response to ensure it is valid JSON
         responseText = responseText.replace(/```json/g, '').replace(/```/g, '');
