@@ -35,7 +35,7 @@ function App() {
       icon: (
         <Linkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://www.linkedin.com/in/guru-brahmam-velpula?",
     },
  
     {
@@ -58,7 +58,7 @@ function App() {
       icon: (
         <MailIcon className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "vgurubrahmam338@gmail.com",
     },
  
     {
@@ -73,7 +73,7 @@ function App() {
       icon: (
         <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://github.com/Vgurubrahmam",
     },
   ];
   const [file, setFile] = useState(null)
@@ -125,7 +125,7 @@ function App() {
       // Trigger confetti if score is good
       if (res.data.analysis?.ats_score?.total >= 70) {
         triggerConfetti()
-      }
+      } 
     } catch (err) {
       setError(err.response ? err.response.data.error : "An error occurred")
       setResponse(null)
