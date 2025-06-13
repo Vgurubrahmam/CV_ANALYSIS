@@ -184,7 +184,7 @@ function App() {
           <div className="inline-block mb-4">
             <div className="relative">
               <div className=" inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 rounded-lg blur-xl opacity-50 animate-pulse"></div>
-              <h1 className="relative text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 py-2 ">
+              <h1 className="relative text-5xl max-sm:text-xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 py-2 ">
                 Resume ATS Analyzer
               </h1>
             </div>
@@ -196,7 +196,7 @@ function App() {
             with AI-powered resume analysis
           </p>
           <a className="absolute top-0 right-0 mt-4  px-2 py-2 text-violet-500 font-semibold  flex items-center" href="https://shield-ai-chatbot.vercel.app/">
-  <NotepadText className="mr-1" />
+  <NotepadText className="mx-1 " />
   Help Guide
 </a>
         </motion.div>
