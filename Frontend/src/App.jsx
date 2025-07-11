@@ -24,7 +24,7 @@ import {
 } from "react-icons/fi";
 import confetti from "canvas-confetti";
 import { Facebook, Instagram, Linkedin, MailIcon, NotepadText } from "lucide-react";
-
+import process from "process"
 function App() {
   const links = [
     {
@@ -107,7 +107,7 @@ function App() {
 
     setIsLoading(true);
     try {
-      const res = await fetch("https://cv-analysis-backend.onrender.com/extract-text", {
+      const res = await fetch(`${process.env.BACKEND_LINK}/extract-text`, {
         method: "POST",
         body: formData,
       });
