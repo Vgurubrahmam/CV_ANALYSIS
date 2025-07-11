@@ -25,7 +25,7 @@ import {
 import confetti from "canvas-confetti";
 import { Facebook, Instagram, Linkedin, MailIcon, NotepadText } from "lucide-react";
 function App() {
-  const BACKEND_URL = import.meta.env.BACKEND_LINK
+  const BACKEND_URL = import.meta.env.VITE_BACKEND_LINK
   const links = [
     {
       title: "LinkedIn",
