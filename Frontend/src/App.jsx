@@ -24,8 +24,8 @@ import {
 } from "react-icons/fi";
 import confetti from "canvas-confetti";
 import { Facebook, Instagram, Linkedin, MailIcon, NotepadText } from "lucide-react";
-import process from "process"
 function App() {
+  const BACKEND_URL = import.meta.env.BACKEND_LINK
   const links = [
     {
       title: "LinkedIn",
@@ -107,7 +107,7 @@ function App() {
 
     setIsLoading(true);
     try {
-      const res = await fetch(`${process.env.BACKEND_LINK}/extract-text`, {
+      const res = await fetch(`${BACKEND_URL}/extract-text`, {
         method: "POST",
         body: formData,
       });
